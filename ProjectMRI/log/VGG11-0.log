@@ -1,0 +1,605 @@
+2019-04-05 11:57:56,465 - main.py[line:59] - CRITICAL: Preset parameters:
+2019-04-05 11:57:56,465 - main.py[line:60] - INFO: dataset: 0
+2019-04-05 11:57:56,466 - main.py[line:61] - INFO: root directory of the dataset: ./../../Datasets/data/
+2019-04-05 11:57:56,466 - main.py[line:62] - INFO: model_name: VGG11-0
+2019-04-05 11:57:56,466 - main.py[line:63] - INFO: device: cuda:2
+2019-04-05 11:57:56,466 - main.py[line:64] - CRITICAL: Hyper parameters:
+2019-04-05 11:57:56,466 - main.py[line:65] - INFO: batch_size: 8
+2019-04-05 11:57:56,466 - main.py[line:66] - INFO: num_epochs: 5
+2019-04-05 11:57:56,466 - main.py[line:67] - INFO: lr: 0.001
+2019-04-05 11:57:56,466 - main.py[line:68] - INFO: image_size: 512
+2019-04-05 11:57:56,520 - main.py[line:80] - INFO: patient_identifiers: ['sub001', 'sub002', 'sub003', 'sub004', 'sub005', 'sub006', 'sub007', 'sub008', 'sub009', 'sub010', 'sub011', 'sub012', 'sub013', 'sub014', 'sub015', 'sub016', 'sub017', 'sub018', 'sub019', 'sub020', 'sub021', 'sub022', 'sub023', 'sub024', 'sub025', 'sub026', 'sub027', 'sub028', 'sub029', 'sub030', 'sub031', 'sub032', 'sub033', 'sub034', 'sub036', 'sub037', 'sub038', 'sub039', 'sub040']
+2019-04-05 11:57:56,520 - main.py[line:81] - INFO: patient_labels: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 1, 0, 2]
+2019-04-05 11:57:56,542 - main.py[line:143] - INFO: num_classes: 3
+2019-04-05 11:57:56,626 - main.py[line:148] - INFO: VGG(
+  (features): Sequential(
+    (0): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace)
+    (7): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (8): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace)
+    (11): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (12): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (13): ReLU(inplace)
+    (14): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (15): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (16): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (17): ReLU(inplace)
+    (18): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (19): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (20): ReLU(inplace)
+    (21): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (22): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (23): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (24): ReLU(inplace)
+    (25): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (26): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (27): ReLU(inplace)
+    (28): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (29): AvgPool2d(kernel_size=1, stride=1, padding=0)
+  )
+  (classifier): Linear(in_features=131072, out_features=3, bias=True)
+)
+2019-04-05 11:57:56,626 - main.py[line:154] - CRITICAL: Start training
+2019-04-05 11:57:59,429 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 1/5
+2019-04-05 11:58:02,850 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/95] Train Loss: 5.227327346801758e-05
+2019-04-05 11:58:06,164 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/95] Train Loss: 0.5448458194732666
+2019-04-05 11:58:09,420 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/95] Train Loss: 0.1558108925819397
+2019-04-05 11:58:12,675 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/95] Train Loss: 0.07209775596857071
+2019-04-05 11:58:15,936 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [50/95] Train Loss: 2.983903646469116
+2019-04-05 11:58:19,175 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [60/95] Train Loss: 0.18453390896320343
+2019-04-05 11:58:22,407 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [70/95] Train Loss: 0.23455177247524261
+2019-04-05 11:58:25,687 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [80/95] Train Loss: 0.28156834840774536
+2019-04-05 11:58:28,992 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [90/95] Train Loss: 1.2300046682357788
+2019-04-05 11:58:30,509 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [95/95] Train Loss: 1.8536182641983032
+2019-04-05 11:58:44,229 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 667/757 (88.1110%)
+2019-04-05 11:58:46,191 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 68/100 (68.0000%)
+2019-04-05 11:58:46,191 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 2/5
+2019-04-05 11:58:49,370 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/95] Train Loss: 0.1770925223827362
+2019-04-05 11:58:52,473 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/95] Train Loss: 6.105218887329102
+2019-04-05 11:58:55,554 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/95] Train Loss: 0.004091054201126099
+2019-04-05 11:58:58,753 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/95] Train Loss: 0.24226489663124084
+2019-04-05 11:59:01,950 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [50/95] Train Loss: 0.12256495654582977
+2019-04-05 11:59:05,067 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [60/95] Train Loss: 0.8754482269287109
+2019-04-05 11:59:08,150 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [70/95] Train Loss: 0.1283399611711502
+2019-04-05 11:59:11,362 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [80/95] Train Loss: 0.4673151671886444
+2019-04-05 11:59:14,489 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [90/95] Train Loss: 1.4796202182769775
+2019-04-05 11:59:15,915 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [95/95] Train Loss: 0.21204760670661926
+2019-04-05 11:59:29,655 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 696/757 (91.9419%)
+2019-04-05 11:59:31,470 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 71/100 (71.0000%)
+2019-04-05 11:59:31,470 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 3/5
+2019-04-05 11:59:34,613 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/95] Train Loss: 0.1968725472688675
+2019-04-05 11:59:37,695 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/95] Train Loss: 0.585685133934021
+2019-04-05 11:59:40,823 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/95] Train Loss: 0.8568759560585022
+2019-04-05 11:59:43,984 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/95] Train Loss: 0.3536151349544525
+2019-04-05 11:59:47,120 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [50/95] Train Loss: 0.1539924591779709
+2019-04-05 11:59:50,240 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [60/95] Train Loss: 2.3932411670684814
+2019-04-05 11:59:53,440 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [70/95] Train Loss: 1.7762184143066406e-05
+2019-04-05 11:59:56,632 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [80/95] Train Loss: 2.1457672119140625e-06
+2019-04-05 11:59:59,799 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [90/95] Train Loss: 0.000676274299621582
+2019-04-05 12:00:01,202 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [95/95] Train Loss: 0.006810212042182684
+2019-04-05 12:00:15,054 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 489/757 (64.5971%)
+2019-04-05 12:00:16,854 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 53/100 (53.0000%)
+2019-04-05 12:00:16,854 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 4/5
+2019-04-05 12:00:19,981 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/95] Train Loss: 0.03738012909889221
+2019-04-05 12:00:23,066 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/95] Train Loss: 3.429527997970581
+2019-04-05 12:00:26,178 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/95] Train Loss: 0.16646423935890198
+2019-04-05 12:00:29,307 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/95] Train Loss: 0.0099630206823349
+2019-04-05 12:00:32,397 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [50/95] Train Loss: 0.020008355379104614
+2019-04-05 12:00:35,479 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [60/95] Train Loss: 0.0
+2019-04-05 12:00:38,634 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [70/95] Train Loss: 5.960464477539063e-08
+2019-04-05 12:00:41,766 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [80/95] Train Loss: 0.21077057719230652
+2019-04-05 12:00:44,878 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [90/95] Train Loss: 0.7257444858551025
+2019-04-05 12:00:46,295 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [95/95] Train Loss: 1.0435987710952759
+2019-04-05 12:00:59,989 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 663/757 (87.5826%)
+2019-04-05 12:01:01,780 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 63/100 (63.0000%)
+2019-04-05 12:01:01,780 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 5/5
+2019-04-05 12:01:04,903 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/95] Train Loss: 0.023959370329976082
+2019-04-05 12:01:07,991 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/95] Train Loss: 0.04830095171928406
+2019-04-05 12:01:11,102 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/95] Train Loss: 0.002521991729736328
+2019-04-05 12:01:14,217 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/95] Train Loss: 6.543207168579102
+2019-04-05 12:01:17,279 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [50/95] Train Loss: 0.18932105600833893
+2019-04-05 12:01:20,370 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [60/95] Train Loss: 2.7298927307128906e-05
+2019-04-05 12:01:23,461 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [70/95] Train Loss: 0.004342332482337952
+2019-04-05 12:01:26,513 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [80/95] Train Loss: 0.12021321058273315
+2019-04-05 12:01:29,599 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [90/95] Train Loss: 7.152557373046875e-07
+2019-04-05 12:01:31,048 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [95/95] Train Loss: 0.9114415049552917
+2019-04-05 12:01:44,778 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 640/757 (84.5443%)
+2019-04-05 12:01:46,637 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 73/100 (73.0000%)
+2019-04-05 12:01:46,656 - main.py[line:161] - INFO: Train finished
+2019-04-05 12:01:47,141 - /data/weishizheng/wuzhengtao/ProjectMRI/utility.py[line:64] - INFO: Model has been saved at: './model/VGG11-0.pt'
+2019-04-05 12:01:47,142 - /data/weishizheng/wuzhengtao/ProjectMRI/utility.py[line:67] - INFO: Load the model and evaluate
+2019-04-05 12:01:49,002 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 73/100 (73.0000%)
+2019-04-05 12:01:49,002 - /data/weishizheng/wuzhengtao/ProjectMRI/utility.py[line:74] - INFO: Accuracy of the loaded model: 0.73
+2019-04-05 12:01:49,002 - main.py[line:169] - CRITICAL: Finished
+2019-04-05 12:01:49,686 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:49,686 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:49,686 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:49,686 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:49,686 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 30/30 (100.0000%)
+2019-04-05 12:01:50,167 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2019-04-05 12:01:50,167 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:50,167 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:50,167 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: False
+2019-04-05 12:01:50,167 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 2/28 (7.1429%)
+2019-04-05 12:01:50,698 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:50,698 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:50,698 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:50,698 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:50,698 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 29/30 (96.6667%)
+2019-04-05 12:01:51,083 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:51,086 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:51,086 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:51,086 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:51,086 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:01:51,592 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:51,592 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:51,592 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:51,592 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:51,593 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 26/26 (100.0000%)
+2019-04-05 12:01:52,023 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:52,023 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+2019-04-05 12:01:52,023 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:52,023 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:52,023 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 23/24 (95.8333%)
+2019-04-05 12:01:52,433 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:52,433 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:52,433 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:52,433 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:52,433 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:01:52,769 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:52,769 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:52,769 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:52,769 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:52,769 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 18/18 (100.0000%)
+2019-04-05 12:01:53,277 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:53,277 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+2019-04-05 12:01:53,277 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:53,277 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:53,277 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 27/28 (96.4286%)
+2019-04-05 12:01:53,668 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:53,669 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:53,669 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:53,669 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:53,669 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:01:54,065 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:54,066 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+2019-04-05 12:01:54,066 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:54,066 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:54,066 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/22 (90.9091%)
+2019-04-05 12:01:54,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:54,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:54,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:54,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:54,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:01:54,878 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:54,878 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0, 2, 2, 2, 2, 0, 0, 2]
+2019-04-05 12:01:54,878 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:54,878 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:54,878 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 14/22 (63.6364%)
+2019-04-05 12:01:55,258 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:55,258 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:55,258 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:55,258 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:55,258 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:01:55,550 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:55,550 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:55,550 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:55,550 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:55,550 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 16/16 (100.0000%)
+2019-04-05 12:01:56,056 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:56,056 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1]
+2019-04-05 12:01:56,056 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:56,056 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:56,056 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 26/28 (92.8571%)
+2019-04-05 12:01:56,390 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:56,390 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:56,390 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:56,390 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:56,390 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:01:56,785 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:56,785 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:56,785 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:56,785 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:56,785 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:01:57,141 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:57,141 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [2, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:57,141 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:57,141 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:57,141 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 16/19 (84.2105%)
+2019-04-05 12:01:57,636 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:57,636 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:57,636 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:57,636 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:57,636 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 26/26 (100.0000%)
+2019-04-05 12:01:58,027 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:58,027 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:58,027 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:58,027 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:58,027 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:01:58,313 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:58,313 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:58,313 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:58,313 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:58,313 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 16/16 (100.0000%)
+2019-04-05 12:01:58,747 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:58,748 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:58,748 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:58,748 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:58,748 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 23/23 (100.0000%)
+2019-04-05 12:01:59,238 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:59,238 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+2019-04-05 12:01:59,239 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:01:59,239 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:01:59,239 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 25/26 (96.1538%)
+2019-04-05 12:01:59,676 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:01:59,676 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1]
+2019-04-05 12:01:59,676 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 1
+2019-04-05 12:01:59,676 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: False
+2019-04-05 12:01:59,676 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 7/22 (31.8182%)
+2019-04-05 12:02:00,139 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:00,139 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:00,139 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:00,139 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:00,139 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 24/24 (100.0000%)
+2019-04-05 12:02:00,532 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:00,533 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:00,533 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:00,533 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:00,533 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:02:00,941 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:00,941 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:00,941 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:00,941 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:00,941 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 19/20 (95.0000%)
+2019-04-05 12:02:01,355 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:01,355 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:01,355 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:01,355 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:01,355 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:02:01,642 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:01,642 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:01,642 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:01,642 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:01,642 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 16/16 (100.0000%)
+2019-04-05 12:02:02,009 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:02,009 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:02,009 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:02,009 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:02,009 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:02:02,336 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:02,336 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:02,336 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:02,336 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:02,336 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 15/18 (83.3333%)
+2019-04-05 12:02:02,781 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+2019-04-05 12:02:02,781 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:02,781 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:02,781 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: False
+2019-04-05 12:02:02,781 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 0/24 (0.0000%)
+2019-04-05 12:02:03,039 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:03,039 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:03,039 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:03,040 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:03,040 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 14/15 (93.3333%)
+2019-04-05 12:02:03,404 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2019-04-05 12:02:03,405 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:03,405 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:03,405 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: False
+2019-04-05 12:02:03,405 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 0/20 (0.0000%)
+2019-04-05 12:02:03,826 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:03,826 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+2019-04-05 12:02:03,826 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:03,826 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:03,826 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/22 (90.9091%)
+2019-04-05 12:02:04,225 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2019-04-05 12:02:04,225 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1]
+2019-04-05 12:02:04,225 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:04,225 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: False
+2019-04-05 12:02:04,225 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 6/22 (27.2727%)
+2019-04-05 12:02:04,474 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:04,474 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:04,474 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:04,475 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:02:04,475 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 14/14 (100.0000%)
+2019-04-05 12:02:04,940 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+2019-04-05 12:02:04,940 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 2, 2, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:02:04,940 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:02:04,940 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: False
+2019-04-05 12:02:04,940 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 7/24 (29.1667%)
+2019-04-05 12:04:41,259 - main.py[line:59] - CRITICAL: Preset parameters:
+2019-04-05 12:04:41,259 - main.py[line:60] - INFO: dataset: 0
+2019-04-05 12:04:41,259 - main.py[line:61] - INFO: root directory of the dataset: ./../../Datasets/data/
+2019-04-05 12:04:41,259 - main.py[line:62] - INFO: model_name: VGG11-0
+2019-04-05 12:04:41,259 - main.py[line:63] - INFO: device: cuda:1
+2019-04-05 12:04:41,259 - main.py[line:64] - CRITICAL: Hyper parameters:
+2019-04-05 12:04:41,259 - main.py[line:65] - INFO: batch_size: 16
+2019-04-05 12:04:41,259 - main.py[line:66] - INFO: num_epochs: 5
+2019-04-05 12:04:41,259 - main.py[line:67] - INFO: lr: 0.001
+2019-04-05 12:04:41,259 - main.py[line:68] - INFO: image_size: 512
+2019-04-05 12:04:41,319 - main.py[line:80] - INFO: patient_identifiers: ['sub001', 'sub002', 'sub003', 'sub004', 'sub005', 'sub006', 'sub007', 'sub008', 'sub009', 'sub010', 'sub011', 'sub012', 'sub013', 'sub014', 'sub015', 'sub016', 'sub017', 'sub018', 'sub019', 'sub020', 'sub021', 'sub022', 'sub023', 'sub024', 'sub025', 'sub026', 'sub027', 'sub028', 'sub029', 'sub030', 'sub031', 'sub032', 'sub033', 'sub034', 'sub036', 'sub037', 'sub038', 'sub039', 'sub040']
+2019-04-05 12:04:41,319 - main.py[line:81] - INFO: patient_labels: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 1, 0, 2]
+2019-04-05 12:04:41,341 - main.py[line:143] - INFO: num_classes: 3
+2019-04-05 12:04:41,426 - main.py[line:148] - INFO: VGG(
+  (features): Sequential(
+    (0): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace)
+    (7): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (8): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace)
+    (11): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (12): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (13): ReLU(inplace)
+    (14): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (15): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (16): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (17): ReLU(inplace)
+    (18): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (19): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (20): ReLU(inplace)
+    (21): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (22): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (23): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (24): ReLU(inplace)
+    (25): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (26): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (27): ReLU(inplace)
+    (28): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (29): AvgPool2d(kernel_size=1, stride=1, padding=0)
+  )
+  (classifier): Linear(in_features=131072, out_features=3, bias=True)
+)
+2019-04-05 12:04:41,426 - main.py[line:154] - CRITICAL: Start training
+2019-04-05 12:04:44,223 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 1/5
+2019-04-05 12:04:50,699 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/48] Train Loss: 1.0918489694595337
+2019-04-05 12:04:57,041 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/48] Train Loss: 0.45541176199913025
+2019-04-05 12:05:03,403 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/48] Train Loss: 0.9462122321128845
+2019-04-05 12:05:09,819 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/48] Train Loss: 0.1377229392528534
+2019-04-05 12:05:14,468 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [48/48] Train Loss: 10.989964485168457
+2019-04-05 12:05:27,830 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 665/757 (87.8468%)
+2019-04-05 12:05:29,848 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 63/100 (63.0000%)
+2019-04-05 12:05:29,848 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 2/5
+2019-04-05 12:05:35,905 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/48] Train Loss: 2.3204526901245117
+2019-04-05 12:05:41,875 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/48] Train Loss: 0.15370060503482819
+2019-04-05 12:05:47,923 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/48] Train Loss: 0.29924675822257996
+2019-04-05 12:05:53,855 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/48] Train Loss: 0.0058379024267196655
+2019-04-05 12:05:58,271 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [48/48] Train Loss: 0.04073066636919975
+2019-04-05 12:06:11,556 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 694/757 (91.6777%)
+2019-04-05 12:06:13,325 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 73/100 (73.0000%)
+2019-04-05 12:06:13,325 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 3/5
+2019-04-05 12:06:19,344 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/48] Train Loss: 0.17452149093151093
+2019-04-05 12:06:25,315 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/48] Train Loss: 0.014642387628555298
+2019-04-05 12:06:31,435 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/48] Train Loss: 0.526195228099823
+2019-04-05 12:06:37,416 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/48] Train Loss: 0.06603151559829712
+2019-04-05 12:06:41,948 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [48/48] Train Loss: 0.04583597183227539
+2019-04-05 12:06:55,427 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 696/757 (91.9419%)
+2019-04-05 12:06:57,638 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 69/100 (69.0000%)
+2019-04-05 12:06:57,638 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 4/5
+2019-04-05 12:07:04,820 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/48] Train Loss: 0.283957839012146
+2019-04-05 12:07:12,120 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/48] Train Loss: 0.6184259653091431
+2019-04-05 12:07:19,384 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/48] Train Loss: 0.4006912112236023
+2019-04-05 12:07:26,604 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/48] Train Loss: 1.3113021850585938e-06
+2019-04-05 12:07:31,921 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [48/48] Train Loss: 0.00440325727686286
+2019-04-05 12:07:47,022 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 719/757 (94.9802%)
+2019-04-05 12:07:49,050 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 75/100 (75.0000%)
+2019-04-05 12:07:49,051 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:260] - INFO: Epoch 5/5
+2019-04-05 12:07:56,312 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [10/48] Train Loss: 0.30607160925865173
+2019-04-05 12:08:03,568 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [20/48] Train Loss: 0.0535484254360199
+2019-04-05 12:08:10,819 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [30/48] Train Loss: 0.02714068442583084
+2019-04-05 12:08:18,140 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [40/48] Train Loss: 0.14584201574325562
+2019-04-05 12:08:23,443 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:125] - INFO: Step [48/48] Train Loss: 0.0018626212840899825
+2019-04-05 12:08:38,268 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on train set is 744/757 (98.2827%)
+2019-04-05 12:08:40,225 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 75/100 (75.0000%)
+2019-04-05 12:08:40,244 - main.py[line:161] - INFO: Train finished
+2019-04-05 12:08:40,722 - /data/weishizheng/wuzhengtao/ProjectMRI/utility.py[line:64] - INFO: Model has been saved at: './model/VGG11-0.pt'
+2019-04-05 12:08:40,722 - /data/weishizheng/wuzhengtao/ProjectMRI/utility.py[line:67] - INFO: Load the model and evaluate
+2019-04-05 12:08:42,764 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:162] - INFO: Accuracy on test set is 75/100 (75.0000%)
+2019-04-05 12:08:42,764 - /data/weishizheng/wuzhengtao/ProjectMRI/utility.py[line:74] - INFO: Accuracy of the loaded model: 0.75
+2019-04-05 12:08:42,765 - main.py[line:169] - CRITICAL: Finished
+2019-04-05 12:08:43,478 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:43,478 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:43,478 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:43,478 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:43,478 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 30/30 (100.0000%)
+2019-04-05 12:08:44,068 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2019-04-05 12:08:44,068 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:44,068 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:44,068 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: False
+2019-04-05 12:08:44,068 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 3/28 (10.7143%)
+2019-04-05 12:08:44,649 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:44,649 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:44,649 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:44,649 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:44,650 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 30/30 (100.0000%)
+2019-04-05 12:08:45,124 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:45,125 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:45,125 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:45,125 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:45,125 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:45,672 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:45,672 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:45,672 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:45,672 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:45,672 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 26/26 (100.0000%)
+2019-04-05 12:08:46,187 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:46,187 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:46,187 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:46,187 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:46,187 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 24/24 (100.0000%)
+2019-04-05 12:08:46,653 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:46,653 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:46,653 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:46,654 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:46,654 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:47,013 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:47,013 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:47,013 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:47,013 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:47,013 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 18/18 (100.0000%)
+2019-04-05 12:08:47,572 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:47,572 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:47,572 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:47,572 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:47,572 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 28/28 (100.0000%)
+2019-04-05 12:08:47,994 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:47,994 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:47,994 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:47,994 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:47,994 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:48,443 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:48,443 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:48,443 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:48,443 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:48,444 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:48,875 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:48,875 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:48,875 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:48,875 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:48,875 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:49,318 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:49,318 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:49,318 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:49,318 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:49,318 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:49,730 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:49,730 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:49,730 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:49,731 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:49,731 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:08:50,046 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:50,046 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:50,046 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:50,046 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:50,046 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 16/16 (100.0000%)
+2019-04-05 12:08:50,598 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:50,598 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:50,599 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:50,599 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:50,599 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 28/28 (100.0000%)
+2019-04-05 12:08:51,006 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:51,006 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:51,006 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:51,006 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:51,006 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:08:51,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:51,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:51,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:51,454 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:51,455 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:51,860 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:51,860 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:51,860 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:51,860 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:51,860 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 19/19 (100.0000%)
+2019-04-05 12:08:52,366 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:52,367 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:52,367 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:52,367 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:52,367 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 26/26 (100.0000%)
+2019-04-05 12:08:52,797 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:52,798 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:52,798 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:52,798 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:52,798 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:53,102 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:53,102 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:53,102 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:53,103 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:53,103 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 16/16 (100.0000%)
+2019-04-05 12:08:53,585 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:53,585 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:53,585 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:53,586 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:53,586 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 23/23 (100.0000%)
+2019-04-05 12:08:54,105 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:54,105 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:54,105 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:54,105 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:54,105 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 26/26 (100.0000%)
+2019-04-05 12:08:54,559 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:54,559 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:54,559 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:54,559 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:54,559 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:55,059 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:55,060 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:55,060 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:55,060 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:55,060 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 24/24 (100.0000%)
+2019-04-05 12:08:55,516 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:55,516 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:55,516 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:55,516 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:55,516 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:55,926 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:55,926 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:55,926 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:55,926 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:55,926 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:08:56,359 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:56,359 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:56,359 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:56,360 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:56,360 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:08:56,673 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:56,673 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:56,673 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:56,673 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:56,673 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 16/16 (100.0000%)
+2019-04-05 12:08:57,049 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:57,049 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:57,049 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:57,049 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:57,049 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 20/20 (100.0000%)
+2019-04-05 12:08:57,431 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:57,431 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+2019-04-05 12:08:57,431 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:57,431 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:57,431 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 17/18 (94.4444%)
+2019-04-05 12:08:57,909 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+2019-04-05 12:08:57,909 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+2019-04-05 12:08:57,909 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 2
+2019-04-05 12:08:57,909 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:57,909 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 23/24 (95.8333%)
+2019-04-05 12:08:58,198 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:58,199 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:58,199 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:58,199 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:58,199 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 15/15 (100.0000%)
+2019-04-05 12:08:58,597 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2019-04-05 12:08:58,597 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1]
+2019-04-05 12:08:58,597 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 1
+2019-04-05 12:08:58,597 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:58,597 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 15/20 (75.0000%)
+2019-04-05 12:08:59,010 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:59,010 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:59,010 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:59,010 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:59,011 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/22 (100.0000%)
+2019-04-05 12:08:59,473 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2019-04-05 12:08:59,473 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+2019-04-05 12:08:59,473 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 1
+2019-04-05 12:08:59,473 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:59,473 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 18/22 (81.8182%)
+2019-04-05 12:08:59,762 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:59,762 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-05 12:08:59,762 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 0
+2019-04-05 12:08:59,762 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:08:59,762 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 14/14 (100.0000%)
+2019-04-05 12:09:00,245 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:213] - INFO: y_true: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+2019-04-05 12:09:00,245 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:214] - INFO: y_pred: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2]
+2019-04-05 12:09:00,245 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:215] - INFO: vote_result: 2
+2019-04-05 12:09:00,245 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:216] - INFO: Success?: True
+2019-04-05 12:09:00,245 - /data/weishizheng/wuzhengtao/ProjectMRI/models.py[line:217] - INFO: Accuracy is 22/24 (91.6667%)
