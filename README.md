@@ -1,6 +1,52 @@
-# 2DCNN 注意事项
+# :pencil: 2019.4.16 
 
-> 2019.4.4
+## 1 注意事项
+
+* 以病人为单位分 slides
+* 合并数据集 1、2
+* 考虑 2D CNN 的多通道输入（3通道）
+* 对于死亡的病人，分别做：
+  * 去掉其他（非肿瘤）死亡原因的病人
+  * 不去掉
+
+## 2 类别均衡
+
+* 数据角度：在训练时实时做数据增广，用 pytorch 的函数。不要先增广再训练
+* 算法角度：修改 loss function, 增加 class weight
+
+## 3 Augmentation​
+
+**训练前：**
+
+尝试 pytorch 的其他 augmentation
+
+对于每张图，先 rotate，再 crop，rotate 的角度在 <img src="https://latex.codecogs.com/svg.latex?[-90^{\circ}, 90^{\circ}]"/>之间，每15度 rotate 一次。
+
+**注意：** 这不是为了解决类别均衡，只是增加了数据量
+
+**测试时：**
+
+分别对测试图片的原图、rotate后、crop后等处理的图片分别预测。然后用 voting 或 probability 的方法集成它们。
+
+## 4 Cross Validation
+
+K-fold validation
+
+每一类分成 5 个 fold，交叉验证，看是否某一个 fold 效果差。
+
+train : test = 8 : 2
+
+**注意： **按病人来分 fold，这里不需要保证每个 fold 的 slides 数量一样多
+
+## 5 加入其他信息
+
+其他信息有性别、年龄等，性别是二值的（0、1），年龄是多值的（0~100等），无法进行归一化，要考虑这个问题。
+
+加其他医疗信息，在 ResNet 的 global average pooling 层与最后的 fc 层之间，加入一个 fc 层
+
+
+
+# 📝 2019.4.4
 
 ## 1 模型选择
 
@@ -28,7 +74,7 @@
 
 **统计不同分辨率的图片分别有多少，不同spacing的图片分别有多少。**
 
-统计每个病人每张slide的spacing，2D处理时只考虑xy方向，更具excel表中spacing的倒数这一属性，对每一张slide进行resize**（具体操作还不清楚，如何根据spacing进行resize）**。
+统计每个病人每张slide的spacing，2D处理时只考虑xy方向，更具excel表中spacing的倒数这一属性，对每一张slide进行resize **（具体操作还不清楚，如何根据spacing进行resize）** 。
 
 以小分辨率为基准进行resize，
 
@@ -96,8 +142,6 @@ pytorch的norm
 
 ## 2019.3.30
 
-> Wu 本周没有开会
-
 **1 Done：**
 
 - 写好了加载数据、训练与测试等基本框架
@@ -130,13 +174,3 @@ pytorch的norm
 - 完善模型。考虑添加正则项，防止模型过拟合，特别当模型层数较多时。
 - 尝试其他 CNN 模型，ResNet等。
 - 对 bounding box (抠出病变区域) 的数据进行训练与测试
-
-
-
-## 2019.3.5
-
-> Wu
-
-**Done：**
-
-完善了代码规范性
