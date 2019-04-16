@@ -3,7 +3,7 @@
 ## 1 注意事项
 
 * 以病人为单位分 slides
-* 合并数据集 1、2
+* 合并数据集 1、2 (CC_ROI and 6_ROI)
 * 考虑 2D CNN 的多通道输入（3通道）
 * 对于死亡的病人，分别做：
   * 去掉其他（非肿瘤）死亡原因的病人
@@ -11,8 +11,13 @@
 
 ## 2 类别均衡
 
-* 数据角度：在训练时实时做数据增广，用 pytorch 的函数。不要先增广再训练
-* 算法角度：修改 loss function, 增加 class weight
+* 数据角度：
+
+  在训练时实时做数据增广，用 pytorch 的函数
+
+  不要先增广再训练。
+
+* 算法角度：修改 loss function, 设置 class weight
 
 ## 3 Augmentation​
 
@@ -24,9 +29,7 @@
 
 **注意：** 这不是为了解决类别均衡，只是增加了数据量
 
-**测试时：**
-
-分别对测试图片的原图、rotate后、crop后等处理的图片分别预测。然后用 voting 或 probability 的方法集成它们。
+**测试时：** 分别对测试图片的原图、rotate 后、crop 后等处理的图片分别预测。然后用 voting 或 probability 的方法集成它们。
 
 ## 4 Cross Validation
 
@@ -36,7 +39,7 @@ K-fold validation
 
 train : test = 8 : 2
 
-**注意： **按病人来分 fold，这里不需要保证每个 fold 的 slides 数量一样多
+**注意：** 按病人来分 fold，这里不需要保证每个 fold 的 slides 数量一样多
 
 ## 5 加入其他信息
 
