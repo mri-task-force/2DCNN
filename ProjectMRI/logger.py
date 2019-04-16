@@ -10,7 +10,8 @@
 
 import logging
 from logging import handlers
-logger_file_path = './log/{}.log'.format('VGG11-1')
+tensorboard_dir = './tblog'
+logger_file_path = './log/{}.log'.format('logger')
 
 class Logger(object):
     level_relations = {
