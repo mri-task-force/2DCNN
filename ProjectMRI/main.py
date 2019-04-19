@@ -17,7 +17,7 @@ from logger import log, tensorboard_dir
 from models.vgg import VGG, cfg
 import utility.save_load
 import utility.fitting
-import process.load_dataset_v3
+import process.load_dataset
 import models.resnets
 import utility.evaluation
 
@@ -61,7 +61,7 @@ optimizer = torch.optim.SGD(
     weight_decay=0.0001
 )
 
-train_data, test_data, sampler = process.load_dataset_v3.load_dataset(isCut=False, data_choose=2)
+train_data, test_data, sampler = process.load_dataset.load_dataset(isCut=False, data_choose=2)
 train_loader = torch.utils.data.DataLoader(dataset=train_data, batch_size=batch_size, shuffle=False, sampler=sampler)
 train_loader_eval = torch.utils.data.DataLoader(dataset=train_data, batch_size=batch_size, shuffle=False)
 test_loader = torch.utils.data.DataLoader(dataset=test_data, batch_size=batch_size, shuffle=False)
