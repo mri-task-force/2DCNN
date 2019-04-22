@@ -25,7 +25,7 @@
 
 尝试 pytorch 的其他 augmentation
 
-对于每张图，先 rotate，再 crop，rotate 的角度在 <img src="https://latex.codecogs.com/svg.latex?[-90^{\circ}, 90^{\circ}]"/>之间，每15度 rotate 一次。
+对于每张图，先 rotate，再 crop，rotate 的角度在 [-90°, 90°] 之间，每15度 rotate 一次。
 
 **注意：** 这不是为了解决类别均衡，只是增加了数据量
 
