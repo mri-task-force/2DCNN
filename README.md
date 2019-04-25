@@ -10,6 +10,7 @@
    1. 先什么都不加
    2. 加class_weight
    3. 加augmentation
+8. class_weihght: $$/frac{1/n_i}{1/n1 + 1/n2 + 1/n3}$$
    
    
 
